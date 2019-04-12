@@ -5,7 +5,7 @@ A series of examples and exercises to help you understand:
 * arrays
 * objects
 * comparing arrays & objects
-* nesting reference type data structures
+* nesting data structures
 
 ### Index
 * [examples to study](#examples-to-study)
@@ -68,6 +68,7 @@ y.y_prop = _;
 ```
 
 __Swapping with Objects__ (bracket notation)  
+[(read this first)](https://github.com/janke-learning/dots-vs-brackets)  
 [on pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%7Ba_prop%3A%20%22b%22%7D%3B%0Alet%20b%20%3D%20%7Bb_prop%3A%20%22a%22%7D%3B%0Alet%20_%20%3D%20null%3B%0A%0A//%20swap%20the%20object%20in%20which%20each%20value%20is%20stored%0A//%20%20with%20dots%0A_%20%3D%20a.a_prop%3B%0Aa.a_prop%20%3D%20b.b_prop%3B%0Ab.b_prop%20%3D%20_%3B%0A%0A//%20------%0A%0A_%20%3D%20null%3B%0Alet%20x%20%3D%20%7Bx_prop%3A%20%22y%22%7D%3B%0Alet%20y%20%3D%20%7By_prop%3A%20%22x%22%7D%3B%0A%0A//%20swap%20the%20object%20in%20which%20each%20value%20is%20stored%0A//%20%20with%20brackets%0Aconst%20x_key%20%3D%20%22x_prop%22%3B%0Aconst%20y_key%20%3D%20%22y_prop%22%3B%0A_%20%3D%20x%5Bx_key%5D%3B%0Ax%5Bx_key%5D%20%3D%20y%5By_key%5D%3B%0Ay%5By_key%5D%20%3D%20_%3B%0A&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
 let a = {a_prop: "b"};
