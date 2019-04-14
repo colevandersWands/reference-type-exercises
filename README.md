@@ -43,6 +43,22 @@ x[0] = y[0];
 y[0] = _;
 ```
 
+__Comparing Reference Types__
+[on pytut](http://www.pythontutor.com/live.html#code=let%20a%20%3D%20%5B%5D%3B%0Alet%20b%20%3D%20%5B%5D%3B%0Aconsole.assert%28a%20!%3D%3D%20b%29%3B%0Aconsole.assert%28a%20%3D%3D%3D%20b%29%3B%0A%0Ab%20%3D%20a%3B%0Aconsole.assert%28a%20%3D%3D%3D%20b%29%3B%0Aconsole.assert%28a%20!%3D%3D%20b%29%3B&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
+```js
+{
+  let a = [];
+  let b = [];
+  console.assert(a !== b);
+  console.assert(a === b);
+  
+  b = a;
+  console.assert(a === b);
+  console.assert(a !== b);
+}
+```
+
+
 __Swapping with Objects__ (dot notation)  
 [on pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%7Bb_prop%3A%20%22b%22%7D%3B%0Alet%20b%20%3D%20%7Ba_prop%3A%20%22a%22%7D%3B%0Alet%20_%20%3D%20null%3B%0A%0A//%20swap%20the%20object%20in%20which%20each%20value%20is%20stored%0A_%20%3D%20a%3B%0Aa%20%3D%20b%3B%0Ab%20%3D%20_%3B%0A%0A//%20------%0A%0A_%20%3D%20null%3B%0Alet%20x%20%3D%20%7Bx_prop%3A%20%22y%22%7D%3B%0Alet%20y%20%3D%20%7By_prop%3A%20%22x%22%7D%3B%0A%0A//%20swap%20the%20value%20each%20object%20contains%0A_%20%3D%20x.x_prop%3B%0Ax.x_prop%20%3D%20y.y_prop%3B%0Ay.y_prop%20%3D%20_%3B%0A&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 ```js
