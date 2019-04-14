@@ -178,14 +178,14 @@ console.assert(b_1 /* === or !== ? */ b_2);
 
 // ---
 
-const key = 0;
+const index = 0;
 
-let a_1[key] = 3;
-let a_2[key] = 3;
+let a_1[index] = 3;
+let a_2[index] = 3;
 console.assert(a_1 /* === or !== ? */ a_2);
 
-let b_1[key] = 5;
-let b_2[key] = 5;
+let b_1[index] = 5;
+let b_2[index] = 5;
 console.assert(b_1 /* === or !== ? */ b_2);
 ```
 
