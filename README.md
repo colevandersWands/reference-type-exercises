@@ -1,7 +1,7 @@
 # Reference Type Exercises
 
 A series of examples and exercises to help you understand:
-* reference vs. value (two ways variables can store values)
+* storing by reference vs. value - [academind video](https://www.youtube.com/watch?v=9ooYYRLdg_g)
 * arrays
 * objects
 * comparing arrays & objects
@@ -13,7 +13,6 @@ A series of examples and exercises to help you understand:
 * [array exercises](#array-exercises)
 * [object exercises](#object-exercises)
 * [arrays vs objects](#arrays-vs-objects)
-* nesting -> for week 3
 
 ---
 
