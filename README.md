@@ -310,31 +310,31 @@ __Complete the Assertions__
 ```
 
 __Fill in the Blanks__  
-[on pytut](http://www.pythontutor.com/live.html#code=%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20%20%20%3B%20//%20write%20this%20line%0Aconsole.assert%28obj_1%20!%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_1.x%20%3D%3D%3D%20obj_2.x%29%3B%0A%0Alet%20key%20%3D%20%22y%22%3B%0Aconsole.assert%28obj_1%5Bkey%5D%20%3D%3D%3D%20obj_2%5Bkey%5D%29%3B%0A%0A%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20%20%20%3B%20//%20write%20this%20line%0Aconsole.assert%28obj_1%5Bobj_2.y%5D%20%3D%3D%3D%20obj_2%5Bobj_1.y%5D%29%3B%0Aconsole.assert%28obj_1%5Bobj_2.y%5D%20%3D%3D%3D%20obj_1%5B'x'%5D%29%3B%0A%0A%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20%20%20%3B%20//%20write%20this%20line%0Aconsole.assert%28obj_1%20%3D%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_1%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%5Bkey%5D%20%3D%3D%3D%20obj_1.y%29%3B%0A%0A%20%20%20%20%3B%20//%20write%20this%20line%0Aconsole.assert%28obj_3.x%20%3D%3D%3D%20obj_2%5Bkey%5D%29%3B&cumulative=false&curInstr=1&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+[on pytut](http://www.pythontutor.com/live.html#code=%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20%20%20%3B%20//%20write%20this%20line%20%20%20%20%3B%20//%20write%20this%20line%0Aconsole.assert%28obj_1%20!%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_1.x%20%3D%3D%3D%20obj_2.x%29%3B%0Aconsole.assert%28obj_1.x%20%3D%3D%3D%20%22a%22%29%3B%0A%0Alet%20key%20%3D%20%22y%22%3B%0Aconsole.assert%28obj_1%5Bkey%5D%20%3D%3D%3D%20obj_2%5Bkey%5D%29%3B%0Aconsole.assert%28obj_1%5Bkey%5D%20%3D%3D%3D%20'x'%29%3B%0A%0A%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20%20%20%3B%20//%20write%20this%20line%0Aconsole.assert%28obj_1%5Bobj_2.y%5D%20%3D%3D%3D%20obj_2%5Bobj_1.y%5D%29%3B%0Aconsole.assert%28obj_1%5Bobj_2.y%5D%20%3D%3D%3D%20obj_1%5B'x'%5D%29%3B%0A%0A%20%20%20%20%3B%20//%20write%20this%20line%0A%20%20%20%20%3B%20//%20write%20this%20line%0Aconsole.assert%28obj_1%20%3D%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_1%29%3B%0Aconsole.assert%28obj_3%20!%3D%3D%20obj_2%29%3B%0Aconsole.assert%28obj_3%5Bkey%5D%20%3D%3D%3D%20obj_1.y%29%3B%0Aconsole.assert%28obj_3%5B'x'%5D%20%3D%3D%3D%20key%29%3B&cumulative=false&curInstr=1&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
-      ; // write this line
-      ; // write this line
-  console.assert(obj_1 !== obj_2);
-  console.assert(obj_1.x === obj_2.x);
+       ; // write this line
+       ; // write this line    ; // write this line
+   console.assert(obj_1 !== obj_2);
+   console.assert(obj_1.x === obj_2.x);
+   console.assert(obj_1.x === "a");
 
-  let key = "y";
-  console.assert(obj_1[key] === obj_2[key]);
+   let key = "y";
+   console.assert(obj_1[key] === obj_2[key]);
+   console.assert(obj_1[key] === 'x');
 
-      ; // write this line
-      ; // write this line
-  console.assert(obj_1[obj_2.y] === obj_2[obj_1.y]);
-  console.assert(obj_1[obj_2.y] === obj_1['x']);
+       ; // write this line
+       ; // write this line
+   console.assert(obj_1[obj_2.y] === obj_2[obj_1.y]);
+   console.assert(obj_1[obj_2.y] === obj_1['x']);
 
-      ; // write this line
-      ; // write this line
-  console.assert(obj_1 === obj_2);
-  console.assert(obj_3 !== obj_1);
-  console.assert(obj_3 !== obj_2);
-  console.assert(obj_3[key] === obj_1.y);
-
-      ; // write this line
-  console.assert(obj_3.x === obj_2[key]);
+       ; // write this line
+       ; // write this line
+   console.assert(obj_1 === obj_2);
+   console.assert(obj_3 !== obj_1);
+   console.assert(obj_3 !== obj_2);
+   console.assert(obj_3[key] === obj_1.y);
+   console.assert(obj_3['x'] === key);
 }
 ```
 
