@@ -65,11 +65,11 @@ __Comparing Reference Types__
 
 
 __Swapping with Objects__ (dot notation)  
-[on pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%7Bb_prop%3A%20%22b%22%7D%3B%0Alet%20b%20%3D%20%7Ba_prop%3A%20%22a%22%7D%3B%0Alet%20_%20%3D%20null%3B%0A%0A//%20swap%20the%20object%20in%20which%20each%20value%20is%20stored%0A_%20%3D%20a%3B%0Aa%20%3D%20b%3B%0Ab%20%3D%20_%3B%0A%0A//%20------%0A%0A_%20%3D%20null%3B%0Alet%20x%20%3D%20%7Bx_prop%3A%20%22y%22%7D%3B%0Alet%20y%20%3D%20%7By_prop%3A%20%22x%22%7D%3B%0A%0A//%20swap%20the%20value%20each%20object%20contains%0A_%20%3D%20x.x_prop%3B%0Ax.x_prop%20%3D%20y.y_prop%3B%0Ay.y_prop%20%3D%20_%3B%0A&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[on pytut](http://www.pythontutor.com/live.html#code=let%20a%20%3D%20%7By_prop%3A%20%22y%22%7D%3B%0Alet%20b%20%3D%20%7Bx_prop%3A%20%22x%22%7D%3B%0Alet%20_%20%3D%20null%3B%0A%0A//%20swap%20the%20object%20in%20which%20each%20value%20is%20stored%0A_%20%3D%20a%3B%0Aa%20%3D%20b%3B%0Ab%20%3D%20_%3B%0A%0A//%20------%0A%0A_%20%3D%20null%3B%0Alet%20x%20%3D%20%7Ba_prop%3A%20%22b%22%7D%3B%0Alet%20y%20%3D%20%7Bb_prop%3A%20%22a%22%7D%3B%0A%0A//%20swap%20the%20value%20each%20object%20contains%0A_%20%3D%20x.a_prop%3B%0Ax.a_prop%20%3D%20y.b_prop%3B%0Ay.b_prop%20%3D%20_%3B&cumulative=false&curInstr=12&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
-  let a = {b_prop: "b"};
-  let b = {a_prop: "a"};
+  let a = {y_prop: "y"};
+  let b = {x_prop: "x"};
   let _ = null;
 
   // swap the object in which each value is stored
@@ -80,44 +80,44 @@ __Swapping with Objects__ (dot notation)
   // ------
 
   _ = null;
-  let x = {x_prop: "y"};
-  let y = {y_prop: "x"};
+  let x = {a_prop: "b"};
+  let y = {b_prop: "a"};
 
   // swap the value each object contains
-  _ = x.x_prop;
-  x.x_prop = y.y_prop;
-  y.y_prop = _;
+  _ = x.a_prop;
+  x.a_prop = y.b_prop;
+  y.b_prop = _;
 }
 ```
 
 __Swapping with Objects__ (bracket notation)  
 [(read this first)](https://github.com/janke-learning/dots-vs-brackets)  
-[on pytut](http://www.pythontutor.com/javascript.html#code=let%20a%20%3D%20%7Ba_prop%3A%20%22b%22%7D%3B%0Alet%20b%20%3D%20%7Bb_prop%3A%20%22a%22%7D%3B%0Alet%20_%20%3D%20null%3B%0A%0A//%20swap%20the%20object%20in%20which%20each%20value%20is%20stored%0A//%20%20with%20dots%0A_%20%3D%20a.a_prop%3B%0Aa.a_prop%20%3D%20b.b_prop%3B%0Ab.b_prop%20%3D%20_%3B%0A%0A//%20------%0A%0A_%20%3D%20null%3B%0Alet%20x%20%3D%20%7Bx_prop%3A%20%22y%22%7D%3B%0Alet%20y%20%3D%20%7By_prop%3A%20%22x%22%7D%3B%0A%0A//%20swap%20the%20object%20in%20which%20each%20value%20is%20stored%0A//%20%20with%20brackets%0Aconst%20x_key%20%3D%20%22x_prop%22%3B%0Aconst%20y_key%20%3D%20%22y_prop%22%3B%0A_%20%3D%20x%5Bx_key%5D%3B%0Ax%5Bx_key%5D%20%3D%20y%5By_key%5D%3B%0Ay%5By_key%5D%20%3D%20_%3B%0A&curInstr=0&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[on pytut](http://www.pythontutor.com/live.html#code=let%20a%20%3D%20%7Bx_prop%3A%20%22y%22%7D%3B%0Alet%20b%20%3D%20%7By_prop%3A%20%22x%22%7D%3B%0Alet%20_%20%3D%20null%3B%0A%0A//%20swap%20the%20object%20in%20which%20each%20value%20is%20stored%0A//%20%20with%20dots%0A_%20%3D%20a.x_prop%3B%0Aa.x_prop%20%3D%20b.y_prop%3B%0Ab.y_prop%20%3D%20_%3B%0A%0A//%20------%0A%0A_%20%3D%20null%3B%0Alet%20x%20%3D%20%7Ba_prop%3A%20%22b%22%7D%3B%0Alet%20y%20%3D%20%7Bb_prop%3A%20%22a%22%7D%3B%0A%0A//%20swap%20the%20object%20in%20which%20each%20value%20is%20stored%0A//%20%20with%20brackets%0Aconst%20a_key%20%3D%20%22a_prop%22%3B%0Aconst%20b_key%20%3D%20%22b_prop%22%3B%0A_%20%3D%20x%5Ba_key%5D%3B%0Ax%5Ba_key%5D%20%3D%20y%5Bb_key%5D%3B%0Ay%5Bb_key%5D%20%3D%20_%3B&cumulative=false&curInstr=14&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 ```js
 {
-  let a = {a_prop: "b"};
-  let b = {b_prop: "a"};
+  let a = {x_prop: "y"};
+  let b = {y_prop: "x"};
   let _ = null;
 
   // swap the object in which each value is stored
   //  with dots
-  _ = a.a_prop;
-  a.a_prop = b.b_prop;
-  b.b_prop = _;
+  _ = a.x_prop;
+  a.x_prop = b.y_prop;
+  b.y_prop = _;
 
   // ------
 
   _ = null;
-  let x = {x_prop: "y"};
-  let y = {y_prop: "x"};
+  let x = {a_prop: "b"};
+  let y = {b_prop: "a"};
 
   // swap the object in which each value is stored
   //  with brackets
-  const x_key = "x_prop";
-  const y_key = "y_prop";
-  _ = x[x_key];
-  x[x_key] = y[y_key];
-  y[y_key] = _;
+  const a_key = "a_prop";
+  const b_key = "b_prop";
+  _ = x[a_key];
+  x[a_key] = y[b_key];
+  y[b_key] = _;
 }
 ```
 
