@@ -2,7 +2,6 @@
 
 A series of examples and exercises to help you understand reference types and reference vs. value in JS.
 
-
 ### Index
 * [examples to study](./examples-to-study.md)
 * [reference exercises](./reference-exercises.md)
@@ -10,6 +9,7 @@ A series of examples and exercises to help you understand reference types and re
 * [object exercises](./object-exercises.md)
 * [arrays vs objects](./arrays-vs-objects.md)
 * [nesting reference types](./nesting-reference-types.md)
+* [resources](#resources)
 
 ---
 
