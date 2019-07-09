@@ -1,7 +1,7 @@
 # Object Exercises
 
-* [complete the assertions 1](#complete-the-assertions 1)
-* [complete the assertions 2](#complete-the-assertions 2)
+* [complete the assertions 1](#complete-the-assertions-1)
+* [complete the assertions 2](#complete-the-assertions-2)
 * [fill in the blanks](#fill-in-the-blanks)
 
 ---
