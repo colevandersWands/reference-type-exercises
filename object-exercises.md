@@ -73,26 +73,26 @@
 {
       ; // write this line
       ; // write this line
-  console.assert(obj_1 !== obj_2);
-  console.assert(obj_1.x === obj_2.x);
+  console.assert(obj_1 !== obj_2, 1);
+  console.assert(obj_1.x === obj_2.x, 2);
 
   let key = "y";
-  console.assert(obj_1[key] === obj_2[key]);
+  console.assert(obj_1[key] === obj_2[key], 3);
 
       ; // write this line
       ; // write this line
-  console.assert(obj_1[obj_2.y] === obj_2[obj_1.y]);
-  console.assert(obj_1[obj_2.y] === obj_1['x']);
+  console.assert(obj_1[obj_2.y] === obj_2[obj_1.y], 4);
+  console.assert(obj_1[obj_2.y] === obj_1['x'], 5);
 
       ; // write this line
       ; // write this line
-  console.assert(obj_1 === obj_2);
-  console.assert(obj_3 !== obj_1);
-  console.assert(obj_3 !== obj_2);
-  console.assert(obj_3[key] === obj_1.y);
+  console.assert(obj_1 === obj_2, 6);
+  console.assert(obj_3 !== obj_1, 7);
+  console.assert(obj_3 !== obj_2, 8);
+  console.assert(obj_3[key] === obj_1.y, 9);
 
       ; // write this line
-  console.assert(obj_3.x === obj_2[key]);
+  console.assert(obj_3.x === obj_2[key], 10);
 }
 ```
 
